@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 			//Get all players in this table
 			$(el).find('tbody tr').each(function(sI, sEl) {
-				if($(sEl).children('td:nth-child(3)').text() > 0) {
+				if($(sEl).children('td:nth-child(3)').text() != 0) {
 					players[type][players[type].length + 1] = new Player(sEl);
 				}
 			});
