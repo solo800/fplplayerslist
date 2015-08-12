@@ -1,12 +1,3 @@
-var premPlayers = (function() {
-	var init = function() {
-		//Get the height of the inputs
-		var height = $('article.inputs').height();
-	};
-	return {
-		init:init
-	}
-})();
 $(document).ready(function() {
 	var players = (function() {
 		var players = {},
@@ -206,11 +197,4 @@ $(document).ready(function() {
 	$('body').on('click', 'div.player', selectReplacement);
 	//Clear replacement player
 	$('body').on('click', '.clear-selection', clearSelectedReplacement);
-
-	// (function() {
-	// 	players['forwards'].forEach(function(el) {
-	// 		console.log(el.name, round(el.points / el.cost));
-	// 	});
-	// })();
-
 });
