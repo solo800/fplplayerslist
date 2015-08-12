@@ -1,5 +1,6 @@
 {
-	"require": {
-		"components/jquery": "1.11.*"
-	}
+	"name": "Adam/FPL-Players-List",
+	"description": "An app for checking and getting player recommendations for fpl",
+	"date": "2015-08-12",
+	"license": "MIT"
 }
