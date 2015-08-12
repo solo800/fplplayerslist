@@ -1,9 +1,9 @@
+<?php require('vendor/autoload.php'); ?>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Players List - Fantasy Premier League</title>
-    <!--<script src='jquery-1.11.2.min.js'></script>-->
-    <?php require('vendor/autoload.php'); ?>
+    <script src='jquery.min.js'></script>
     <script src='playersList.js'></script>
     <style>
       @font-face {
