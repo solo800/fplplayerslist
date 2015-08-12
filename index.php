@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <title>Players List - Fantasy Premier League</title>
-    <script src='jquery-1.11.2.min.js'></script>
+    <!--<script src='jquery-1.11.2.min.js'></script>-->
     <script src='playersList.js'></script>
     <style>
       @font-face {
