@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="google-site-verification" content="RpCmrbk9JW6XWWkVuj8GdW_sr3llo79nPaa8g8wKjb0" />
     <title>Players List - Fantasy Premier League</title>
     <script src='jquery-1.11.3.min.js'></script>
     <script src='playersList.js'></script>
