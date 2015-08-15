@@ -1,11 +1,29 @@
 $(document).ready(function() {
+	var players = {};
+	function formatWeekName(el) {
+		var week;
+		return $(el).prop('class').replace('ism', '');
+	}
 	var players = (function() {
 		var players = {},
+			weeks = {},
 			tables, type, player;
 		
 		//Grab all tables on a page
 		tables = $('table');
 
+		$('.prem-players > .ism').each(function(i, week) {
+			if(typeof players[formatWeekName(week)] === 'undefined') {
+				weeks[formatWeekName(week)] = addPlayers($(week).find('table'));
+			}
+		});
+
+		return weeks;
+	})();
+
+	console.log(players);
+
+	function addPlayers(tables) {
 		tables.each(function(i, el) {
 			if($(el).hasClass('ismPrintTable')) {
 				//Get the type of player heading
@@ -23,8 +41,7 @@ $(document).ready(function() {
 			});
 		});
 		return players;
-	})();
-
+	}
 	//Player class
 	function Player(el) {
 		this.name = null;
