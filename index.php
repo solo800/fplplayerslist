@@ -62,7 +62,8 @@ while(($file_name = readdir($handle)) !== FALSE) {
       }
       .inputs {
         width: 30%;
-        margin: 1.5% auto;
+        margin: .75% auto;
+        min-width: 275px;
       }
       .inputs > * {
         float: left;
@@ -75,48 +76,72 @@ while(($file_name = readdir($handle)) !== FALSE) {
         width: 40%;
         margin: 0 5%;
       }
-      #build_dream_team {
+      #build-dream-team {
         color: blue;
         text-decoration: underline;
         cursor: pointer;
       }
-      .suggestions {
-        height: 100%;
+      article {
         width: 100%;
         margin: 0 auto;
         max-width: 1200px;
         min-width: 800px;
       }
-      .suggestions > div {
+      article.dream-team {
+        display: none;
+        border: 1px solid black;
+        border-radius: 8px;
+        position: relative;
+      }
+      article.suggestions {
+        height: 100%;
+      }
+      article > div {
         width: 24.5%;
         margin: 0 .25%;
         float: left;
       }
-      .suggestions > div > * {
+      article > div > * {
         float: left;
       }
-      .suggestions > div > div {
+      article > div > div {
         width: 100%;
         margin: 0 .1%;
       }
-      .suggestions > div > div.heading > * {
+      article > div > div.heading > * {
         border-top: 1px solid #CAC6FF;
       }
-      .suggestions > div > label, .suggestions > div > input {
+      article > div > label, article > div > input {
         width: 80%;
         margin: .5% 10%;
         text-align: center;
       }
-      .suggestions > div > div > * {
+      .dream-team div.dt-stats {
+        width: 50%;
+        margin: 0 25%;
+      }
+      .dream-team div.dt-stats > {
+        width: 70%;
+        margin: 0 15%;
+      }
+      .dream-team div.dt-stats > div > span {
+        width: 33%;
+      }
+      .dream-team h2 {
+        text-align: center;
+        margin: 0;
+        text-align: center;
+      }
+      div.player > * {
         border-width: 0;
         border-color: transparent;
         border-bottom: 1px solid #CAC6FF;
         border-right: 1px solid #CAC6FF;
       }
-      .suggestions > div > div > *:first-child {
+      div.player > *:first-child {
         border-left: 1px solid #CAC6FF;
       }
-      .suggestions > div:last-child > div > *:last-child {
+      div.player:last-child > *:last-child {
         border-right: 1px solid #CAC6FF;
       }
       div.replacement {
@@ -129,12 +154,12 @@ while(($file_name = readdir($handle)) !== FALSE) {
         border: 1px solid darkblue;
         margin-top: 1%;
       }
-      div.replacement h2 {
+      div.replacement h3 {
         text-align: center;
         font-size: 1em;
         margin: 0;
       }
-      div.replacement span:nth-child(2) {
+      span.clear-selection {
         border: 0;
         width: 3%;
         position: absolute;
@@ -144,11 +169,14 @@ while(($file_name = readdir($handle)) !== FALSE) {
         transform: scale(1);
         transition: .3s;
       }
-      div.replacement span:nth-child(2):hover {
+      span.clear-selection:hover {
         cursor: pointer;
         transform: scale(1.5);
       }
-      .suggestions > div > div span {
+      .dream-team span.clear-selection {
+        width: 1%;
+      }
+      article > div > div span {
         width: 14%;
         float: left;
         font-size: .9em;
@@ -157,7 +185,7 @@ while(($file_name = readdir($handle)) !== FALSE) {
         text-overflow: ellipsis;
         white-space: nowrap;
       }
-      .suggestions > div > div span.long {
+      article > div > div span.long {
         width: 29%;
       }
       div.heading span {
@@ -167,7 +195,7 @@ while(($file_name = readdir($handle)) !== FALSE) {
         transition: .3s;
         background-color: transparent;
       }
-      div.player:hover > * {
+      article:not(.dream-team) div div.player:not(.heading):hover > * {
         background-color: #CAC6FF;
         cursor: pointer;
       }
@@ -177,16 +205,13 @@ while(($file_name = readdir($handle)) !== FALSE) {
       div.player.player-suggestion > span:last-child {
         border-color: red;
       }
-      .suggestions > div > h2 {
+      article > div > h3 {
         font-size: 1em;
         margin: 0;
         width: 100%;
         text-align: center;
         border: 1px solid red;
         border-top: 0;
-      }
-      .game_week_file_names {
-        display: none;
       }
       .clear-fix:before, .clear-fix:after {
         content: "";
@@ -205,8 +230,8 @@ while(($file_name = readdir($handle)) !== FALSE) {
     <h1>FPL Players List</h1>
     <div class='inputs clear-fix'>
       <label>Game Week</label>
-      <label id='build_dream_team'>Build Dream Team</label>
-      <select id='game_week'>
+      <label id='build-dream-team'>Build Dream Team</label>
+      <select id='game-week'>
         <?php
         $game_weeks = array_reverse($game_weeks);
         foreach($game_weeks as $week) {
@@ -223,11 +248,57 @@ while(($file_name = readdir($handle)) !== FALSE) {
       </select>
       <input type='text' placeholder='Team Cost'/>
     </div>
+    <article class='dream-team clear-fix'>
+      <h2>Dream Team</h2>
+      <div class='dt-stats clear-fix'>
+        <div class='heading player'>
+          <span>Value</span>
+          <span>Points</span>
+          <span>Cost</span>
+        </div>
+      </div>
+      <div class='g clear-fix'>
+        <div class='heading player'>
+          <span class='long'>Name</span>
+          <span class='long'>Team</span>
+          <span>Pts</span>
+          <span>&#163;</span>
+          <span>Val</span>
+        </div>
+      </div>
+      <div class='d clear-fix'>
+        <div class='heading player'>
+          <span class='long'>Name</span>
+          <span class='long'>Team</span>
+          <span>Pts</span>
+          <span>&#163;</span>
+          <span>Val</span>
+        </div>
+      </div>
+      <div class='m clear-fix'>
+        <div class='heading player'>
+          <span class='long'>Name</span>
+          <span class='long'>Team</span>
+          <span>Pts</span>
+          <span>&#163;</span>
+          <span>Val</span>
+        </div>
+      </div>
+      <div class='f clear-fix'>
+        <div class='heading player'>
+          <span class='long'>Name</span>
+          <span class='long'>Team</span>
+          <span>Pts</span>
+          <span>&#163;</span>
+          <span>Val</span>
+        </div>
+      </div>
+    </article>
     <article class='suggestions clear-fix'>
       <div class='g clear-fix'>
         <label>Goalkeepers</label>
         <input type='text' id='goalkeepers'/>
-        <div class='heading'>
+        <div class='heading player'>
           <span class='long'>Name</span>
           <span class='long'>Team</span>
           <span>Pts</span>
@@ -239,7 +310,7 @@ while(($file_name = readdir($handle)) !== FALSE) {
       <div class='d clear-fix'>
         <label>Defenders</label>
         <input type='text' id='defenders'/>
-        <div class='heading'>
+        <div class='heading player'>
           <span class='long'>Name</span>
           <span class='long'>Team</span>
           <span>Pts</span>
@@ -251,7 +322,7 @@ while(($file_name = readdir($handle)) !== FALSE) {
       <div class='m clear-fix'>
         <label>Midfielders</label>
         <input type='text' id='midfielders'/>
-        <div class='heading'>
+        <div class='heading player'>
           <span class='long'>Name</span>
           <span class='long'>Team</span>
           <span>Pts</span>
@@ -263,7 +334,7 @@ while(($file_name = readdir($handle)) !== FALSE) {
       <div class='f clear-fix'>
         <label>Forwards</label>
         <input type='text' id='forwards'/>
-        <div class='heading'>
+        <div class='heading player'>
           <span class='long'>Name</span>
           <span class='long'>Team</span>
           <span>Pts</span>
