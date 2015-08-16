@@ -40,7 +40,6 @@ $(document).ready(function() {
 
 					return players;
 				}
-
 				//Player class
 				function Player(el) {
 					this.name = null;
@@ -114,14 +113,42 @@ $(document).ready(function() {
 						}
 					}
 				}
+				function sortTeam(team, stat, highLow) {
+					if(typeof stat === 'undefined') stat = 'points';
+					highLow = typeof highLow === 'undefined' ? 'highLow' : 'lowHigh';
+
+					if(Object.prototype.toString.call(team) === '[object Object]') {
+						$.each(team, function(i, el) {
+							team[i] = el.sort(function(a, b) {
+								if(highLow === 'highLow') {
+									return a[stat] < b[stat] ? 1 : -1;
+								}
+								else {
+									return a[stat] > b[stat] ? 1 : -1;
+								}
+							});
+						});
+
+						return team;
+					}
+					else if(Object.prototype.toString.call(team) === '[object Array]') {
+						return team.sort(function(a, b) {
+							if(highLow === 'highLow') {
+								return a[stat] < b[stat] ? 1 : -1;
+							}
+							else {
+								return a[stat] > b[stat] ? 1 : -1;
+							}
+						});
+					}
+				}
 				function displayPlayers(position, players) {
 					//Empty the associated player container
 					$('div.'+position.slice(0,1)).children('.player').remove();
 
 					//Sort the players array from highest to lowers value
-					players = players.sort(function(a, b) {
-						return a.val < b.val ? 1 : -1;
-					});
+					players = sortTeam(players, 'val');
+
 					$.each(players, function(i, el) {
 						$('div.'+position.slice(0,1)).append(playerToDom(el, 'player'));
 					});
@@ -205,15 +232,20 @@ $(document).ready(function() {
 
 					var repCon = $('div.'+position.slice(0,1)+' div.replacement');
 
-					players.sort(function(a,b) {
-						return a.val < b.val ? -1 : 1;
-					}).forEach(function(pl) {
+					players = sortTeam(players, 'val').reverse();
+
+					players.forEach(function(pl) {
 						repCon.after(playerToDom(pl, 'player player-suggestion'));
 					});
 
 					repCon.after($(document.createElement('h2')).text('Suggestions').addClass('player player-suggestion'));
 				}
-				function addDTPlayer(dreamTeam, position, player) {
+				function addDTPlayer(dreamTeam, position, player, stat) {
+					if(typeof stat === 'undefined') stat = 'points';
+
+					//Sort the current dream team
+					dreamTeam = sortTeam(dreamTeam, stat);
+
 					var add = false,
 						found = false;
 					switch(position) {
@@ -234,39 +266,130 @@ $(document).ready(function() {
 						dreamTeam[position].push(player);
 					}
 					else {
-						dreamTeam[position].forEach(function(pl, i, thisPos) {
-							if(player.poinst > pl.points) add = i;
+						dreamTeam[position].forEach(function(pl, i) {
+							if(parseFloat(player[stat]) > parseFloat(pl[stat])) add = i;
 							if(player.name === pl.name) found = true;
 						});
 
 						if(add !== false && found !== true) {
 							dreamTeam[position][add] = player;
 						}
-
 					}
 				}
-				function calcTeamValue(team) {
-					var val = 0;
+				function calcTeamStats(team, type) {
+					var stats;
+
+					switch(type) {
+						case 'val':
+						case 'value':
+							type = 'val';
+							break;
+						case 'points':
+						case 'pts':
+							type = 'points';
+							break;
+						case 'cost':
+						case 'price':
+							type = 'cost';
+							break;
+						default:
+							type = 'all';
+							stats = {
+								val:0,
+								points:0,
+								cost:0
+							};
+					}
 
 					$.each(team, function(pos, players) {
 						players.forEach(function(player) {
-							val += parseFloat(player.cost);
+							if(type === 'all') {
+								stats.val += parseFloat(player.val);
+								stats.points += parseFloat(player.points);
+								stats.cost += parseFloat(player.cost);
+							}
+							else {
+								stats += parseFloat(player[type]);
+							}
 						});
 					});
 
-					return round(val, 2);
+					if(type === 'all') {
+						stats.val = round(stats.val, 2);
+						stats.points = round(stats.points, 2);
+						stats.cost = round(stats.cost, 2);
+					}
+					else {
+						stats = round(stats, 2);
+					}
+
+					return stats;
+				}
+				function inCurrentTeam(team, player) {
+					var inTeam = false;
+					if(Object.prototype.toString.call(team) === '[object Object]') {
+						$.each(team, function(pos, players) {
+							players.forEach(function(pl) {
+								if(pl.name === player.name) inTeam = true;
+							});
+						});
+					}
+					else if(Object.prototype.toString.call(team) === '[object Array]') {
+						team.forEach(function(pl) {
+							if(pl.name === player.name) inTeam = true;
+						});
+					}
+
+					return inTeam;
+				}
+				function pairComparablePlayers(valueTeam) {
+					valueTeam = sortTeam(valueTeam, 'points');
+
+					var compPlayers = {};
+					$.each(valueTeam, function(vPos, vPlayersArr) {
+						vPlayersArr.forEach(function(vPl) {
+							compPlayers[vPl.name] = {
+								current: vPl,
+								comp: null
+							};
+							$.each(players, function(pos, playersArr) {
+								if(pos === vPos) {
+									//Find the cheapest player in the array who is not already in the val team but is closest in score
+									playersArr.forEach(function(pl) {
+										if(parseInt(pl.points) > parseInt(vPl.points)) {
+											if(!inCurrentTeam(valueTeam, pl)) {
+												//Check if a comp player has been found yet
+												if(null === compPlayers[vPl.name].comp) {
+													compPlayers[vPl.name].comp = pl;
+												}
+												else if(parseFloat(pl.val) > parseFloat(compPlayers[vPl.name].comp.val)) {
+													compPlayers[vPl.name].comp = pl;
+												}
+											}
+										}
+									});
+								}
+							});
+						});
+					});
+					return compPlayers;
 				}
 				function buildDreamTeam() {
-					var teamValue = $(this).siblings('input').val(),
-						curValue,
+					var maxCost = round(parseFloat($(this).siblings('input').val()), 2),
 						dreamTeam = {
+							goalkeepers:[],
+							defenders:[],
+							midfielders:[],
+							forwards:[]
+						},
+						valueTeam = {
 							goalkeepers:[],
 							defenders:[],
 							midfielders:[],
 							forwards:[]
 						};
 
-					if(isNaN(parseFloat(teamValue))) {
+					if(isNaN(parseFloat(maxCost))) {
 						alert('Please enter a valid team value to calculate your dream team with.');
 						return;
 					}
@@ -274,16 +397,93 @@ $(document).ready(function() {
 					//Iterate over each position and grab the best performing players
 					$.each(players, function(pos, playersArr) {
 						playersArr.forEach(function(player) {
-							addDTPlayer(dreamTeam, pos, player);
+							addDTPlayer(dreamTeam, pos, player, 'points');
+						});
+					});
+					$.each(players, function(pos, playersArr) {
+						playersArr.forEach(function(player) {
+							addDTPlayer(valueTeam, pos, player, 'val');
 						});
 					});
 
-					console.log(dreamTeam);
+					dTStats = calcTeamStats(dreamTeam);
+					vTStats = calcTeamStats(valueTeam);
 
-					//Now begin downgrading players until the dream team is under the team value
-					curValue = calcTeamValue(dreamTeam);
-					console.log(curValue);
+					if(maxCost < vTStats.cost) {
+						alert("Please raise your specified team cost.\n"
+								+ "A decent team cannot be made for that cost.\n"
+								+ "Minimum team cost should be "+vTStats.cost);
+						return;
+					}
+
+					console.log(dTStats, vTStats);
+
+					//Now begin upgrading players until the dream team cannot be upgraded without breaking team value
+					//Find the player that is closest in price but higher in points than a current dt player
+					var compPlayers = pairComparablePlayers(valueTeam);
+					
+					//Find the pair that has a comparable player with the highest value disparity from current player
+					//and wont put the team over the limit
+					var pair = true,
+						count = 0,
+						compPlayers;
+
+					while('undefined' !== typeof pair && ++count < 1000) {
+						vTStats = calcTeamStats(valueTeam);
+						compPlayers = pairComparablePlayers(valueTeam);
+						pair = findBestPlayerPair(compPlayers, vTStats.cost, maxCost);
+						if('undefined' !== typeof pair) {
+							replacePlayer(valueTeam, pair);
+						}
+					}
+					console.log(calcTeamStats(valueTeam));
+					console.log(valueTeam);
 				}
+				function replacePlayer(team, pair) {
+					var curPlayerName = pair.current.name,
+						replacement = pair.comp,
+						repPos, repIndex;
+
+					$.each(team, function(pos, players) {
+						players.forEach(function(pl, i) {
+							if(pl.name === curPlayerName) {
+								repPos = pos;
+								repIndex = i;
+							}
+						});
+					});
+
+					team[repPos][repIndex] = replacement;
+				}
+				function findBestPlayerPair(pairs, currentTeamCost, maxCost) {
+					var possibleTeamCost,
+						currentBestPair,
+						currentDisparity,
+						disparity;
+
+					$.each(pairs, function(name, pair) {
+						if(null !== pair.comp) {
+							possibleTeamCost = currentTeamCost - (parseFloat(pair.current.cost) - parseFloat(pair.comp.cost));
+
+							if(possibleTeamCost <= maxCost) {
+								if(typeof currentBestPair === 'undefined') {
+									currentBestPair = pair;
+								}
+								else if(currentBestPair !== 'undefined') {
+									currentDisparity = parseFloat(currentBestPair.current.val) - parseFloat(currentBestPair.comp.val);
+									disparity = parseFloat(pair.current.val) - parseFloat(pair.comp.val);
+
+									if(disparity < currentDisparity) {
+										currentBestPair = pair;
+									}
+								}
+							}
+						}
+					});
+
+					return currentBestPair;
+				}
+
 				//Player search
 				$('body').on('keyup', '.suggestions > div > input', keyUpOnInput);
 				//Select replacement player
@@ -300,6 +500,7 @@ $(document).ready(function() {
 
 	//Select a week
 	$('body').on('change', '#game_week', function() {
+		$('body').off('keyup, click');
 		getWeeksScores($(this));
 	});
 });

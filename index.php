@@ -15,6 +15,7 @@ while(($file_name = readdir($handle)) !== FALSE) {
     <title>Players List - Fantasy Premier League</title>
     <script src='jquery-1.11.3.min.js'></script>
     <script src='jquery.csv-0.71.min.js'></script>
+    <!--<script src='downloadObj.js'></script>-->
     <script src='playersList.js'></script>
     <style>
       @font-face {
@@ -220,7 +221,7 @@ while(($file_name = readdir($handle)) !== FALSE) {
         }
         ?>
       </select>
-      <input type='text' placeholder='Team Value'/>
+      <input type='text' placeholder='Team Cost'/>
     </div>
     <article class='suggestions clear-fix'>
       <div class='g clear-fix'>
