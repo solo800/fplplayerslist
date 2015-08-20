@@ -1,0 +1,562 @@
+goalkeepers,,,
+Player,Team,Points,Cost
+Hart,Man City,13,£5.6
+Cech,Arsenal,4,£5.5
+Courtois,Chelsea,-2,£5.4
+de Gea,Man Utd,0,£5.4
+Mignolet,Liverpool,12,£5.1
+Romero,Man Utd,14,£5.1
+Adrián,West Ham,10,£5.1
+Begovic,Chelsea,4,£5.0
+Howard,Everton,10,£5.0
+Caballero,Man City,0,£5.0
+Forster,Southampton,0,£5.0
+Stekelenburg,Southampton,2,£5.0
+Lloris,Spurs,2,£5.0
+Pantilimon,Sunderland,3,£5.0
+Fabianski,Swansea,7,£5.0
+Foster,West Brom,0,£5.0
+Ospina,Arsenal,0,£4.9
+Valdés,Man Utd,0,£4.9
+Guzan,Aston Villa,8,£4.5
+Bunn,Aston Villa,0,£4.5
+Boruc,Bournemouth,4,£4.5
+Federici,Bournemouth,0,£4.5
+Blackman,Chelsea,0,£4.5
+Speroni,Crystal Palace,0,£4.5
+Robles,Everton,0,£4.5
+Schmeichel,Leicester,4,£4.5
+Player,Team,Points,Cost
+Bogdan,Liverpool,0,£4.5
+Johnstone,Man Utd,0,£4.5
+Lindegaard,Man Utd,0,£4.5
+Krul,Newcastle,4,£4.5
+Ruddy,Norwich,4,£4.5
+Gazzaniga,Southampton,0,£4.5
+Vorm,Spurs,2,£4.5
+Given,Stoke,0,£4.5
+Butland,Stoke,4,£4.5
+Haugaard,Stoke,0,£4.5
+Mannone,Sunderland,0,£4.5
+Nordfeldt,Swansea,0,£4.5
+Gomes,Watford,8,£4.5
+Arlauskis,Watford,0,£4.5
+Myhill,West Brom,12,£4.5
+Randolph,West Ham,0,£4.5
+Davis K,Southampton,0,£4.4
+McCarthy,Crystal Palace,5,£4.0
+Hennessey,Crystal Palace,0,£4.0
+Maddison,Leicester,0,£4.0
+Schwarzer,Leicester,0,£4.0
+Darlow,Newcastle,0,£4.0
+Elliot,Newcastle,0,£4.0
+Rudd,Norwich,0,£4.0
+Gilmartin,Watford,0,£4.0
+Rose,West Brom,0,£4.0
+Player,Team,Points,Cost
+Bogdan,Liverpool,0,£4.5
+Johnstone,Man Utd,0,£4.5
+Lindegaard,Man Utd,0,£4.5
+Krul,Newcastle,4,£4.5
+Ruddy,Norwich,4,£4.5
+Gazzaniga,Southampton,0,£4.5
+Vorm,Spurs,2,£4.5
+Given,Stoke,0,£4.5
+Butland,Stoke,4,£4.5
+Haugaard,Stoke,0,£4.5
+Mannone,Sunderland,0,£4.5
+Nordfeldt,Swansea,0,£4.5
+Gomes,Watford,8,£4.5
+Arlauskis,Watford,0,£4.5
+Myhill,West Brom,12,£4.5
+Randolph,West Ham,0,£4.5
+Davis K,Southampton,0,£4.4
+McCarthy,Crystal Palace,5,£4.0
+Hennessey,Crystal Palace,0,£4.0
+Maddison,Leicester,0,£4.0
+Schwarzer,Leicester,0,£4.0
+Darlow,Newcastle,0,£4.0
+Elliot,Newcastle,0,£4.0
+Rudd,Norwich,0,£4.0
+Gilmartin,Watford,0,£4.0
+Rose,West Brom,0,£4.0
+defenders,,,
+Player,Team,Points,Cost
+Terry,Chelsea,1,£7.0
+Ivanovic,Chelsea,1,£7.0
+Cahill,Chelsea,2,£6.5
+Baines,Everton,0,£6.4
+Kompany,Man City,25,£6.2
+Smalling,Man Utd,16,£6.1
+Koscielny,Arsenal,3,£6.0
+Rahman,Chelsea,0,£6.0
+Azpilicueta,Chelsea,7,£6.0
+Coleman,Everton,11,£6.0
+Zabaleta,Man City,0,£6.0
+Darmian,Man Utd,15,£5.7
+Kolarov,Man City,16,£5.6
+Shaw,Man Utd,13,£5.6
+Mertesacker,Arsenal,3,£5.5
+Bellerín,Arsenal,2,£5.5
+Debuchy,Arsenal,1,£5.5
+Monreal,Arsenal,2,£5.5
+Zouma,Chelsea,1,£5.5
+Jagielka,Everton,7,£5.5
+Stones,Everton,8,£5.5
+Skrtel,Liverpool,13,£5.5
+Clyne,Liverpool,13,£5.5
+Demichelis,Man City,2,£5.5
+Mangala,Man City,11,£5.5
+Rojo,Man Utd,0,£5.5
+Caulker,Southampton,0,£5.5
+Bertrand,Southampton,0,£5.5
+Fonte,Southampton,1,£5.5
+Rose,Spurs,0,£5.5
+Vertonghen,Spurs,2,£5.5
+Cresswell,West Ham,7,£5.5
+Gibbs,Arsenal,1,£5.4
+Clichy,Man City,0,£5.4
+Jones,Man Utd,0,£5.4
+Valencia,Man Utd,1,£5.4
+Trippier,Spurs,0,£5.4
+Amavi,Aston Villa,11,£5.0
+Bacuna,Aston Villa,7,£5.0
+Dann,Crystal Palace,3,£5.0
+Schlupp,Leicester,5,£5.0
+Lovren,Liverpool,13,£5.0
+Sagna,Man City,12,£5.0
+Janmaat,Newcastle,-2,£5.0
+Mbemba,Newcastle,2,£5.0
+Cédric,Southampton,4,£5.0
+Alderweireld,Spurs,3,£5.0
+Walker,Spurs,0,£5.0
+Dier,Spurs,8,£5.0
+Pieters,Stoke,2,£5.0
+Johnson,Stoke,3,£5.0
+Naughton,Swansea,7,£5.0
+Williams,Swansea,9,£5.0
+Taylor,Swansea,9,£5.0
+Fernández,Swansea,5,£5.0
+Chester,West Brom,0,£5.0
+Dawson,West Brom,7,£5.0
+Lescott,West Brom,1,£5.0
+McAuley,West Brom,6,£5.0
+Jenkinson,West Ham,0,£5.0
+Reid,West Ham,7,£5.0
+Tomkins,West Ham,5,£5.0
+Ogbonna,West Ham,6,£5.0
+Gabriel,Arsenal,0,£4.9
+Chambers,Arsenal,0,£4.9
+Fuchs,Leicester,2,£4.9
+Sakho,Liverpool,0,£4.9
+Moreno,Liverpool,1,£4.9
+Evans,Man Utd,0,£4.9
+McNair,Man Utd,0,£4.9
+Fazio,Spurs,0,£4.9
+Wimmer,Spurs,0,£4.9
+Shawcross,Stoke,0,£4.9
+van Aanholt,Sunderland,1,£4.9
+Tabanou,Swansea,0,£4.9
+Richards,Aston Villa,10,£4.6
+Gomez,Liverpool,16,£4.6
+Crespo,Aston Villa,0,£4.5
+Richardson,Aston Villa,1,£4.5
+Clark,Aston Villa,7,£4.5
+Okore,Aston Villa,0,£4.5
+Francis,Bournemouth,4,£4.5
+Cook,Bournemouth,2,£4.5
+Elphick,Bournemouth,4,£4.5
+Daniels,Bournemouth,4,£4.5
+Ward,Crystal Palace,12,£4.5
+Player,Team,Points,Cost
+Delaney,Crystal Palace,8,£4.5
+Souaré,Crystal Palace,8,£4.5
+Galloway,Everton,8,£4.5
+Benalouane,Leicester,1,£4.5
+Morgan,Leicester,3,£4.5
+de Laet,Leicester,3,£4.5
+Huth,Leicester,3,£4.5
+Touré,Liverpool,0,£4.5
+Flanagan,Liverpool,0,£4.5
+Coloccini,Newcastle,2,£4.5
+Haidara,Newcastle,7,£4.5
+Dummett,Newcastle,0,£4.5
+Lascelles,Newcastle,0,£4.5
+Bassong,Norwich,2,£4.5
+Whittaker,Norwich,9,£4.5
+Martin,Norwich,9,£4.5
+Olsson,Norwich,0,£4.5
+Yoshida,Southampton,2,£4.5
+Gardos,Southampton,0,£4.5
+Martina,Southampton,1,£4.5
+Davies,Spurs,5,£4.5
+Wilson,Stoke,0,£4.5
+Cameron,Stoke,3,£4.5
+Muniesa,Stoke,2,£4.5
+Bardsley,Stoke,0,£4.5
+Wollscheid,Stoke,1,£4.5
+Kaboul,Sunderland,0,£4.5
+Jones,Sunderland,0,£4.5
+Brown,Sunderland,0,£4.5
+Coates,Sunderland,0,£4.5
+Matthews,Sunderland,1,£4.5
+Bartley,Swansea,0,£4.5
+Amat,Swansea,0,£4.5
+Britos,Watford,0,£4.5
+Aké,Watford,0,£4.5
+Cathcart,Watford,9,£4.5
+Prödl,Watford,8,£4.5
+Layún,Watford,8,£4.5
+Holebas,Watford,0,£4.5
+Nyom,Watford,6,£4.5
+Olsson,West Brom,5,£4.5
+Pocognoli,West Brom,0,£4.5
+Collins,West Ham,0,£4.5
+O'Brien,West Ham,0,£4.5
+Hutton,Aston Villa,0,£4.4
+Mings,Bournemouth,0,£4.4
+Distin,Bournemouth,0,£4.4
+Kelly,Crystal Palace,0,£4.4
+Hangeland,Crystal Palace,0,£4.4
+Wasilewski,Leicester,0,£4.4
+José Enrique,Liverpool,0,£4.4
+Ilori,Liverpool,0,£4.4
+Denayer,Man City,0,£4.4
+Varela,Man Utd,0,£4.4
+Blackett,Man Utd,0,£4.4
+Williamson,Newcastle,0,£4.4
+Wisdom,Norwich,0,£4.4
+Chiriches,Spurs,0,£4.4
+Yedlin,Spurs,0,£4.4
+O'Shea,Sunderland,0,£4.4
+Rangel,Swansea,0,£4.4
+Angella,Watford,0,£4.4
+Paredes,Watford,0,£4.4
+Oxford,West Ham,6,£4.1
+Senderos,Aston Villa,0,£4.0
+Baker,Aston Villa,0,£4.0
+Kinsella,Aston Villa,0,£4.0
+Cargill,Bournemouth,0,£4.0
+Smith,Bournemouth,1,£4.0
+Mariappa,Crystal Palace,0,£4.0
+Fryers,Crystal Palace,0,£4.0
+Hibbert,Everton,0,£4.0
+Browning,Everton,1,£4.0
+Simpson,Leicester,0,£4.0
+Moore,Leicester,0,£4.0
+Steven Taylor,Newcastle,1,£4.0
+Turner,Norwich,0,£4.0
+Ryan Bennett,Norwich,0,£4.0
+Targett,Southampton,1,£4.0
+Roberge,Sunderland,0,£4.0
+Tiendalli,Swansea,0,£4.0
+Ekstrand,Watford,0,£4.0
+Pudil,Watford,0,£4.0
+Hoban,Watford,0,£4.0
+Gamboa,West Brom,0,£4.0
+Burke,West Ham,0,£4.0
+midfielders,,,
+Player,Team,Points,Cost
+Hazard,Chelsea,3,£11.5
+Sánchez,Arsenal,6,£11.0
+Silva,Man City,17,£10.0
+Fàbregas,Chelsea,4,£8.9
+Sterling,Man City,6,£8.9
+Walcott,Arsenal,1,£8.8
+Yaya Touré,Man City,21,£8.6
+Özil,Arsenal,9,£8.5
+Cazorla,Arsenal,4,£8.5
+Ramsey,Arsenal,4,£8.5
+Mata,Man Utd,11,£8.5
+Depay,Man Utd,6,£8.5
+Eriksen,Spurs,10,£8.5
+Oscar,Chelsea,6,£8.4
+Firmino,Liverpool,2,£8.4
+Coutinho,Liverpool,13,£8.1
+Mané,Southampton,4,£8.0
+Payet,West Ham,15,£7.6
+Lallana,Liverpool,6,£7.5
+Sigurdsson,Swansea,5,£7.5
+Cuadrado,Chelsea,1,£7.4
+Ayew,Swansea,17,£7.1
+Willian,Chelsea,8,£7.0
+Mirallas,Everton,2,£7.0
+Henderson,Liverpool,7,£7.0
+Milner,Liverpool,5,£7.0
+Nasri,Man City,2,£7.0
+Wijnaldum,Newcastle,9,£7.0
+Tadic,Southampton,7,£7.0
+Chadli,Spurs,10,£7.0
+Shaqiri,Stoke,0,£7.0
+Schweinsteiger,Man Utd,1,£6.9
+Herrera,Man Utd,1,£6.9
+Lamela,Spurs,2,£6.9
+Cabaye,Crystal Palace,12,£6.6
+Barkley,Everton,20,£6.6
+Deulofeu,Everton,1,£6.5
+Navas,Man City,9,£6.5
+Fellaini,Man Utd,0,£6.5
+Cabella,Newcastle,0,£6.5
+Lens,Sunderland,9,£6.5
+Bolasie,Crystal Palace,2,£6.4
+de Jong,Newcastle,1,£6.4
+Chamberlain,Arsenal,3,£6.0
+Veretout,Aston Villa,5,£6.0
+Traoré,Aston Villa,0,£6.0
+Gradel,Bournemouth,3,£6.0
+Puncheon,Crystal Palace,7,£6.0
+Fernandinho,Man City,11,£6.0
+Young,Man Utd,4,£6.0
+Townsend,Spurs,0,£6.0
+Arnautovic,Stoke,10,£6.0
+Montero,Swansea,8,£6.0
+Berghuis,Watford,1,£6.0
+Wilshere,Arsenal,0,£5.9
+Ritchie,Bournemouth,3,£5.9
+Markovic,Liverpool,0,£5.9
+Sissoko,Newcastle,3,£5.9
+Gouffran,Newcastle,0,£5.9
+Ward-Prowse,Southampton,1,£5.9
+Lennon,Spurs,0,£5.9
+Adam,Stoke,3,£5.9
+Walters,Stoke,3,£5.9
+Johnson,Sunderland,6,£5.9
+Mahrez,Leicester,25,£5.8
+Ramires,Chelsea,2,£5.5
+Sako,Crystal Palace,0,£5.5
+Zaha,Crystal Palace,9,£5.5
+Delph,Man City,0,£5.5
+Schneiderlin,Man Utd,6,£5.5
+Januzaj,Man Utd,6,£5.5
+Blind,Man Utd,6,£5.5
+Brady,Norwich,9,£5.5
+Redmond,Norwich,17,£5.5
+Ramírez,Southampton,0,£5.5
+Dembélé,Spurs,4,£5.5
+Afellay,Stoke,4,£5.5
+Shelvey,Swansea,7,£5.5
+Jurado,Watford,9,£5.5
+Gardner,West Brom,4,£5.5
+Brunt,West Brom,5,£5.5
+Noble,West Ham,4,£5.5
+Kouyaté,West Ham,14,£5.5
+Grealish,Aston Villa,0,£5.4
+Atsu,Bournemouth,0,£5.4
+Moses,Chelsea,0,£5.4
+Cleverley,Everton,5,£5.4
+Can,Liverpool,2,£5.4
+Colback,Newcastle,3,£5.4
+Johnson,Norwich,3,£5.4
+Clasie,Southampton,0,£5.4
+Van Ginkel,Stoke,3,£5.4
+Larsson,Sunderland,3,£5.4
+Giaccherini,Sunderland,0,£5.4
+Routledge,Swansea,2,£5.4
+Ki Sung-yueng,Swansea,1,£5.4
+Sessegnon,West Brom,0,£5.4
+Lanzini,West Ham,1,£5.4
+Nolan,West Ham,1,£5.4
+Albrighton,Leicester,20,£5.1
+Rosicky,Arsenal,0,£5.0
+Adelaide,Arsenal,0,£5.0
+Sinclair,Aston Villa,4,£5.0
+Gueye,Aston Villa,3,£5.0
+Arter,Bournemouth,0,£5.0
+Player,Team,Points,Cost
+Pugh,Bournemouth,3,£5.0
+Matic,Chelsea,4,£5.0
+McArthur,Crystal Palace,9,£5.0
+McCarthy,Everton,4,£5.0
+McGeady,Everton,0,£5.0
+Pienaar,Everton,0,£5.0
+Kanté,Leicester,2,£5.0
+Allen,Liverpool,0,£5.0
+Ibe,Liverpool,6,£5.0
+Fernando,Man City,0,£5.0
+Carrick,Man Utd,2,£5.0
+Hoolahan,Norwich,15,£5.0
+Howson,Norwich,4,£5.0
+Odjidja-Ofoe,Norwich,0,£5.0
+Davis,Southampton,2,£5.0
+Pritchard,Spurs,0,£5.0
+Mason,Spurs,4,£5.0
+Ireland,Stoke,4,£5.0
+Odemwingie,Stoke,1,£5.0
+M'Vila,Sunderland,2,£5.0
+Rodwell,Sunderland,1,£5.0
+Gómez,Sunderland,0,£5.0
+Cork,Swansea,3,£5.0
+Capoue,Watford,5,£5.0
+Abdi,Watford,1,£5.0
+Gnabry,West Brom,0,£5.0
+Morrison,West Brom,5,£5.0
+McManaman,West Brom,2,£5.0
+Jarvis,West Ham,1,£5.0
+Obiang,West Ham,1,£5.0
+Arteta,Arsenal,1,£4.9
+Zelalem,Arsenal,0,£4.9
+Carles Gil,Aston Villa,0,£4.9
+N'Zogbia,Aston Villa,0,£4.9
+Cole,Aston Villa,0,£4.9
+King,Bournemouth,2,£4.9
+Loftus-Cheek,Chelsea,0,£4.9
+Jedinak,Crystal Palace,1,£4.9
+Ledley,Crystal Palace,0,£4.9
+Osman,Everton,0,£4.9
+Aarons,Newcastle,1,£4.9
+Dorrans,Norwich,4,£4.9
+Hesketh,Southampton,0,£4.9
+Carroll,Spurs,0,£4.9
+Alli,Spurs,0,£4.9
+Buckley,Sunderland,0,£4.9
+Dyer,Swansea,1,£4.9
+McClean,West Brom,2,£4.9
+Amalfitano,West Ham,0,£4.9
+Pereira,Man Utd,0,£4.8
+Coquelin,Arsenal,2,£4.5
+Flamini,Arsenal,0,£4.5
+Westwood,Aston Villa,7,£4.5
+Sánchez,Aston Villa,2,£4.5
+Surman,Bournemouth,4,£4.5
+O'Kane,Bournemouth,2,£4.5
+MacDonald,Bournemouth,0,£4.5
+Gosling,Bournemouth,2,£4.5
+Mikel,Chelsea,0,£4.5
+Mutch,Crystal Palace,3,£4.5
+Bannan,Crystal Palace,0,£4.5
+Williams,Crystal Palace,0,£4.5
+Lee Chung-yong,Crystal Palace,1,£4.5
+Guédioura,Crystal Palace,0,£4.5
+Barry,Everton,5,£4.5
+Gibson,Everton,0,£4.5
+Besic,Everton,0,£4.5
+Oviedo,Everton,1,£4.5
+King,Leicester,4,£4.5
+Drinkwater,Leicester,4,£4.5
+Hammond,Leicester,0,£4.5
+James,Leicester,0,£4.5
+Lucas,Liverpool,0,£4.5
+Roberts,Man City,0,£4.5
+Obertan,Newcastle,7,£4.5
+Tioté,Newcastle,1,£4.5
+Abeid,Newcastle,0,£4.5
+Anita,Newcastle,4,£4.5
+Tettey,Norwich,1,£4.5
+O'Neil,Norwich,1,£4.5
+Elliott Bennett,Norwich,0,£4.5
+Mulumbu,Norwich,0,£4.5
+Oriol Romeu,Southampton,0,£4.5
+Wanyama,Southampton,4,£4.5
+Reed,Southampton,0,£4.5
+Bentaleb,Spurs,2,£4.5
+Whelan,Stoke,3,£4.5
+Sidwell,Stoke,1,£4.5
+Moha,Stoke,0,£4.5
+Cattermole,Sunderland,3,£4.5
+Bridcutt,Sunderland,0,£4.5
+Britton,Swansea,1,£4.5
+Fulton,Swansea,0,£4.5
+Grimes,Swansea,0,£4.5
+Watson,Watford,1,£4.5
+Anya,Watford,5,£4.5
+Dyer,Watford,0,£4.5
+Murray,Watford,0,£4.5
+Behrami,Watford,5,£4.5
+Fletcher,West Brom,4,£4.5
+Yacob,West Brom,3,£4.5
+Samuelsen,West Ham,0,£4.5
+Poyet,West Ham,0,£4.5
+Stanislas,Bournemouth,0,£4.4
+Andreu,Norwich,0,£4.4
+forwards,,,
+Player,Team,Points,Cost
+Agüero,Man City,7,£13.1
+Costa,Chelsea,4,£11.0
+Sturridge,Liverpool,0,£10.5
+Rooney,Man Utd,7,£10.5
+Kane,Spurs,4,£9.5
+Giroud,Arsenal,9,£9.0
+Benteke,Liverpool,11,£8.5
+Bony,Man City,6,£8.4
+Lukaku,Everton,18,£8.1
+Pellè,Southampton,6,£8.0
+Welbeck,Arsenal,0,£7.5
+N'Jie,Spurs,0,£7.5
+Remy,Chelsea,0,£7.3
+Falcao,Chelsea,2,£7.3
+Ings,Liverpool,0,£7.3
+Gomis,Swansea,12,£7.1
+Rondón,West Brom,1,£7.0
+Balotelli,Liverpool,0,£6.9
+Rodriguez,Southampton,3,£6.9
+Cissé,Newcastle,10,£6.5
+Diouf,Stoke,8,£6.5
+Berahino,West Brom,4,£6.5
+Carroll,West Ham,0,£6.5
+Sakho,West Ham,4,£6.5
+Mitrovic,Newcastle,0,£6.3
+Gestede,Aston Villa,7,£6.0
+Vardy,Leicester,6,£6.0
+Okazaki,Leicester,8,£6.0
+Hernández,Man Utd,0,£6.0
+Long,Southampton,7,£6.0
+Lambert,West Brom,3,£6.0
+Ayew,Aston Villa,2,£5.9
+Murray,Crystal Palace,2,£5.9
+Wickham,Crystal Palace,3,£5.9
+Adebayor,Spurs,0,£5.9
+Soldado,Spurs,0,£5.9
+Crouch,Stoke,0,£5.9
+Joselu,Stoke,4,£5.9
+Valencia,West Ham,0,£5.9
+Bamford,Crystal Palace,1,£5.8
+Ulloa,Leicester,0,£5.8
+Kramaric,Leicester,0,£5.8
+Origi,Liverpool,0,£5.8
+Juanmi,Southampton,0,£5.8
+,Team,Points,Cost
+Zárate,West Ham,10,£5.6
+Rivière,Newcastle,0,£5.5
+Defoe,Sunderland,8,£5.5
+Deeney,Watford,6,£5.5
+Wilson,Bournemouth,4,£5.4
+Campbell,Crystal Palace,0,£5.4
+Naismith,Everton,2,£5.4
+Borini,Liverpool,0,£5.4
+Bojan,Stoke,0,£5.4
+Eder,Swansea,1,£5.4
+Ideye,West Brom,0,£5.4
+Gayle,Crystal Palace,0,£5.3
+Ayoze,Newcastle,0,£5.3
+Koné,Everton,16,£5.1
+Agbonlahor,Aston Villa,4,£5.0
+Tomlin,Bournemouth,0,£5.0
+Iheanacho,Man City,0,£5.0
+Jerome,Norwich,3,£5.0
+Fletcher,Sunderland,8,£5.0
+Ighalo,Watford,8,£5.0
+Kozák,Aston Villa,0,£4.9
+Kermorgant,Bournemouth,1,£4.9
+Chamakh,Crystal Palace,0,£4.9
+Pozo,Man City,0,£4.9
+Wilson,Man Utd,0,£4.9
+van Wolfswinkel,Norwich,0,£4.9
+Vydra,Watford,0,£4.9
+Anichebe,West Brom,1,£4.9
+Hepburn-Murphy,Aston Villa,0,£4.5
+Rantie,Bournemouth,0,£4.5
+McAleny,Everton,0,£4.5
+Lawrence,Leicester,0,£4.5
+Armstrong,Newcastle,0,£4.5
+Grabban,Norwich,2,£4.5
+Hooper,Norwich,1,£4.5
+Lafferty,Norwich,0,£4.5
+Mayuka,Southampton,0,£4.5
+Watmore,Sunderland,5,£4.5
+Graham,Sunderland,1,£4.5
+Emnes,Swansea,0,£4.5
+Barrow,Swansea,0,£4.5
+Forestieri,Watford,0,£4.5
+Samaras,West Brom,0,£4.5
+Lee,West Ham,0,£4.5
+Maiga,West Ham,2,£4.5
