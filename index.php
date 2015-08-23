@@ -8,7 +8,7 @@ $game_weeks = [];
 while(($file_name = readdir($handle)) !== FALSE) {
   if(strpos($file_name, '.csv') !== FALSE) array_push($game_weeks, $file_name);
 
-  usort($file_name, function($a, $b) {
+  usort($game_weeks, function($a, $b) {
     if(stripos($a, 'week') === FALSE) return 1;
     
     $a_week = (int) str_replace('.csv', '', str_replace('Week ', '', $a));
