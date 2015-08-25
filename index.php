@@ -11,8 +11,8 @@ while(($file_name = readdir($handle)) !== FALSE) {
 usort($game_weeks, function($a, $b) {
   if(stripos($a, 'week') === FALSE) return 1;
   
-  $a_week = (int) str_replace('.csv', '', str_replace('Week ', '', $a));
-  $b_week = (int) str_replace('.csv', '', str_replace('Week ', '', $b));
+  $a_week = (int) str_replace('.csv', '', str_replace('Week', '', $a));
+  $b_week = (int) str_replace('.csv', '', str_replace('Week', '', $b));
   return $a_week > $b_week ? -1 : 1;
 });
 ?>
