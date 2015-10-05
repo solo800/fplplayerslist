@@ -37,6 +37,7 @@ $(document).ready(function() {
 						curPos;
 
 					playersArr.forEach(function(row) {
+						console.log(row);
 						if(row[0] !== 'Player' && row[1] !== 'Team' && row[0] !== '') {
 							if(positions.indexOf(row[0]) > -1 && typeof players[row[0]] === 'undefined') {
 								curPos = row[0];
