@@ -1,0 +1,31 @@
+{
+  "name": "playerslist",
+  "version": "1.0.0",
+  "description": "An app to help fantasy players do better",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solo800/fplplayerslist.git"
+  },
+  "keywords": [
+    "Fantasy",
+    "Premiere",
+    "League",
+    "Adam",
+    "Eliot",
+    "Solomon"
+  ],
+  "author": "Adam Eliot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solo800/fplplayerslist/issues"
+  },
+  "homepage": "https://github.com/solo800/fplplayerslist#readme",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1"
+  }
+}
