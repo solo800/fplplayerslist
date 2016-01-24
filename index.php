@@ -21,7 +21,6 @@ usort($game_weeks, function($a, $b) {
     <meta charset="utf-8">
     <title>Players List - Fantasy Premier League</title>
     <link rel='stylesheet' type='text/css' href='css/style.css'/>
-
   </head>
   <body>
     <h1>FPL Players List</h1>
@@ -101,7 +100,6 @@ usort($game_weeks, function($a, $b) {
           <span>Pts</span>
           <span>&#163;</span>
           <span>Val</span>
-          <span data-games='5'>Trend</span>
         </div>
         <div class='replacement'></div>
       </div>
@@ -142,5 +140,12 @@ usort($game_weeks, function($a, $b) {
         <div class='replacement'></div>
       </div>
     </article>
+
+    <!-- Scripts -->
+    <script src='jquery-1.11.3.min.js'></script>
+    <script src='jquery.csv-0.71.min.js'></script>
+    <!--<script src='downloadObj.js'></script>-->
+    <script src='playersList.js'></script>
+    <!-- End Scripts -->
   </body>
 </html>
