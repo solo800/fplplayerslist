@@ -43,12 +43,10 @@ $(document).ready(function() {
 								players[row[0]] = [];
 							}
 							else if(positions.indexOf(row[0]) === -1) {
-				console.log('adding', row, row[3], row[3].slice(1));
 
 								//Check if this player has already been added, the fpl list sometimes has duplicats
 								if(isNaN(parseFloat(row[3]))) row[3] = row[3].slice(1);
-				console.log('pushing', new Player(row));
-
+								
 								players[curPos].push(new Player(row));
 							}
 						}
@@ -93,7 +91,7 @@ $(document).ready(function() {
 				function playerSearch(position, query) {
 					if(isNaN(parseFloat(query))) {
 						return position.filter(function(pl) {
-							if(pl.name.toLowerCase().indexOf(query) > -1 || 
+							if(pl.name.toLowerCase().indexOf(query) > -1 ||
 										pl.team.toLowerCase().indexOf(query) > -1) {
 								return true;
 							}
@@ -181,7 +179,7 @@ $(document).ready(function() {
 
 					return playerCon;
 				}
-				function round(n) {    
+				function round(n) {
 			    return +(Math.round(n + "e+2")  + "e-2");
 				}
 				function selectReplacement() {
@@ -509,7 +507,7 @@ $(document).ready(function() {
 					//Now begin upgrading players until the dream team cannot be upgraded without breaking team value
 					//Find the player that is closest in price but higher in points than a current dt player
 					var compPlayers = pairComparablePlayers(valueTeam);
-					
+
 					//Find the pair that has a comparable player with the highest value disparity from current player
 					//and wont put the team over the limit
 					var pair = true,
@@ -540,7 +538,7 @@ $(document).ready(function() {
 				$('body').on('click', '.dream-team .clear-selection', clearTeam);
 			}
 		});
-	}				
+	}
 
 	var players = getWeeksScores($('#game-week'));
 
